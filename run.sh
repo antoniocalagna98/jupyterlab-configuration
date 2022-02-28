@@ -1,4 +1,4 @@
-
-docker build -t jpl_config -f config/jpl_config.Dockerfile .
-docker run -ti -v ${PWD}:/usr/local/bin/jpl_config -p 8888:8888 jpl_config
- hello
+alias docker=podman
+docker build -t jupyterlab -f config/jupyterlab.Dockerfile .
+#docker run -it -v ${PWD}:/usr/local/bin/jupyterlab -p 8888:8888 jupyterlab
+docker run -it -d -v ${PWD}:/usr/local/bin/jupyterlab -p 8888:8888 --name=jupyter jupyterlab

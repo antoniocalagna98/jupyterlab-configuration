@@ -1,0 +1,11 @@
+{
+  "language_servers": {
+    "pylsp": {
+      "serverSettings": {
+        "pylsp.plugins.pydocstyle.enabled": true,
+        "pylsp.plugins.pyflakes.enabled": true,
+        "pylsp.plugins.flake8.enabled": true
+      }
+    }
+  }
+}

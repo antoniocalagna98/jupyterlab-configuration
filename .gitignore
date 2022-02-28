@@ -15,3 +15,7 @@ build/
 __pycache__/
 *.py[cod]
 *.class
+
+# Notebook
+notebooks/*
+*/notebooks/*

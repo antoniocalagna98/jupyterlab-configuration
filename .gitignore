@@ -19,3 +19,13 @@ __pycache__/
 # Notebook
 notebooks/*
 */notebooks/*
+
+# Output
+nohup.out
+
+# Temporary Files
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+
+.virtual_documents/*
+*/.virtual_documents/*

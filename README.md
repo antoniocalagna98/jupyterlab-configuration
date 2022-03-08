@@ -19,8 +19,3 @@ The following picture shows the JupyterLab configuration in action. **Use** it w
 
 1. You can mount a local folder (e.g. git) by: `mount --bind /absolute/path/to/some/folder mounted_folder` (restart after!)
 1. You can also map port to localhost with: `ssh -L 8888:localhost:8888 <user>@<RemoteIP>`
-
-#<table class="image">
-#<tr><td><img src="config_use.png" width="600"></td></tr>
-#<tr><td class="caption" >Using the JupyterLab configuration</td></tr>
-#</table>

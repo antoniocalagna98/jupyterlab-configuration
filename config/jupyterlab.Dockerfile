@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
@@ -48,6 +48,7 @@ RUN apt-get install npm -y
 RUN pip install numpy
 RUN pip install matplotlib
 RUN pip install pandas
+RUN pip install etcd3
 
 ENV MAIN_PATH=/usr/local/bin/jupyterlab
 ENV LIBS_PATH=${MAIN_PATH}/libs
@@ -55,7 +56,8 @@ ENV CONFIG_PATH=${MAIN_PATH}/config
 ENV NOTEBOOK_PATH=${MAIN_PATH}/notebooks
 
 EXPOSE 8888
-
+EXPOSE 2379
+EXPOSE 2380
 COPY /config/extensions_jupyter.sh ./
 
 RUN bash -c "/extensions_jupyter.sh"

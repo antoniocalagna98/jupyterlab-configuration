@@ -13,7 +13,8 @@ cd ${MAIN_PATH}
 
 mkdir notebooks
 
-nohup jupyter lab --no-browser --port=8888 &
+#nohup jupyter lab --no-browser --port=8888 &
+jupyter lab --no-browser --port=8888
 
 sleep infinity
-#tail -f /dev/null
+tail -f /dev/null
